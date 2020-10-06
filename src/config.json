@@ -1,0 +1,46 @@
+{
+  "handlers": [
+    {
+      "enable": true,
+      "origin": "twitter.com",
+      "paths": "/*",
+      "exclude_paths": "/privacy,/tos",
+      "refresh": false
+    },
+    {
+      "enable": true,
+      "origin": "www.facebook.com",
+      "paths": "/*",
+      "exclude_paths": "/*/dialog/oauth/,/login/reauth.php,/business/*,/help/*,/careers/*",
+      "refresh": false
+    },
+    {
+      "enable": true,
+      "origin": "www.instagram.com",
+      "paths": "/*",
+      "exclude_paths": "/api/*,/about/*,/directory/*,/explore/*",
+      "refresh": false
+    },
+    {
+      "enable": true,
+      "origin": "open.spotify.com",
+      "paths": "/*",
+      "exclude_paths": "",
+      "refresh": false
+    },
+    {
+      "enable": true,
+      "origin": "www.deezer.com",
+      "paths": "/*",
+      "exclude_paths": "",
+      "refresh": false
+    },
+    {
+      "enable": true,
+      "origin": "discord.com",
+      "paths": "/invite/*, /channels/*",
+      "exclude_paths": "",
+      "refresh": true
+    }
+  ]
+}

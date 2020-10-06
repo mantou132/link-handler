@@ -1,0 +1,30 @@
+{
+  "name": "Link Handler",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Open the link in the opened or installed WebApp",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": ["<all_urls>"],
+      "run_at": "document_end"
+    }
+  ],
+  "browser_action": {
+    "default_title": "Link Handler"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "permissions": ["storage", "webNavigation", "webRequest", "tabs", "<all_urls>"],
+  "icons": {
+    "64": "icons/64.png",
+    "128": "icons/128.png",
+    "256": "icons/256.png",
+    "512": "icons/512.png"
+  }
+}
